@@ -1,1 +1,1 @@
-export * from "./components/button/index.js";
+export { Com as Button } from "./components/button/index.js";
