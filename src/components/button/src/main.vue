@@ -40,7 +40,13 @@
         cursor: pointer;
         touch-action: manipulation;
         white-space: nowrap;
-        border-radius: 4px;
+        border-radius: 2px;
+        border: none;
+        box-shadow: 2px 2px 8px #ababab;
+    }
+
+    .lz-btn:hover {
+        box-shadow: 4px 4px 8px #ababab;
     }
 
     .lz-btn+.lz-btn {
@@ -48,13 +54,11 @@
     }
 
     .lz-btn-default {
-        border: 1px solid #bfbfbf;
         background-color: #fff;
     }
 
     .lz-btn-default:hover {
-        border-color: #4d99e0;
-        color: #4d99e0;
+        color: #0067b8;
     }
 
     .lz-btn-default:active {
@@ -63,13 +67,12 @@
     }
 
     .lz-btn-primary {
-        background-color: #4d99e0;
-        border: 1px solid #4d99e0;
+        background-color: #0067b8;
         color: #fff
     }
 
     .lz-btn-primary:hover {
-        background-color: #217ebd;
+        background-color: #0061ad;
         color: #fff;
     }
 
@@ -79,7 +82,6 @@
     }
 
     .lz-btn-text {
-        border-color: transparent;
         color: #409eff;
         background: transparent;
         padding-left: 0;
@@ -95,13 +97,11 @@
 
     .lz-btn:disabled {
         color: #737477;
-        border: 1px solid #bfbfbf;
         background-color: #e6e6e6;
         cursor: default;
     }
 
     .lz-btn-text:disabled {
         background: transparent;
-        border: none;
     }
 </style>
