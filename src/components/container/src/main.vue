@@ -42,6 +42,8 @@
     .lz-container {
         display: flex;
         padding: 12px;
+        width: 100%;
+        height: 100%;
     }
 
     .lz-container--vcenter {

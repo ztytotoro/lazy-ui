@@ -1,23 +1,10 @@
 <template>
-    <div class="lz-bg" :style="style"></div>
+    <div class="lz-bg"></div>
 </template>
 
 <script>
     export default {
-        name: "LzBg",
-        props: {
-            color: {
-                type: String,
-                default: "white"
-            }
-        },
-        computed: {
-            style: function(){
-                return {
-                    backgrondColor: this.color
-                }
-            }
-        }
+        name: "LzBg"
     };
 </script>
 
