@@ -9,14 +9,12 @@
             color: {
                 type: String,
                 default: "white"
-            },
-            image: String
+            }
         },
         computed: {
             style: function(){
                 return {
-                    backgrondColor: this.color,
-                    backgroundImage: `url(${this.image})`
+                    backgrondColor: this.color
                 }
             }
         }
