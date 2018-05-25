@@ -43,7 +43,7 @@
         border-radius: 2px;
         border: none;
         box-shadow: 2px 2px 8px #ababab;
-        transition: 0.13s;
+        transition: 0.167s;
     }
 
     .lz-btn:hover {
