@@ -15,8 +15,8 @@
         computed: {
             style: function(){
                 return {
-                    backgrondColor: this.color,
-                    backgroundImage: `url(${this.image})`
+                    "backgrond-color": this.color,
+                    "background-image": `url(${this.image})`
                 }
             }
         }
