@@ -1,5 +1,5 @@
 <template functional>
-    <div class="hy-card">
+    <div class="lz-card">
         <slot></slot>
     </div>
 </template>
@@ -11,7 +11,7 @@
 </script>
 
 <style>
-    .hy-card {
+    .lz-card {
         background: #fff;
         border-radius: 5px;
         min-height: 80px;
