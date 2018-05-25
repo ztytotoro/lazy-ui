@@ -32,6 +32,7 @@
                     case "bottom": t.push("lz-container--bottom");break;
                     default: break;
                 }
+                return t;
             }
         }
     };
