@@ -13,10 +13,10 @@
 <style>
     .lz-card {
         background: #fff;
-        border-radius: 5px;
+        border-radius: 1px;
         min-height: 80px;
         min-width: 200px; 
         padding: 12px;
-        box-shadow: 1px 1px 1px 1px #d0d3da;
+        box-shadow: 0px 0px 8px 2px #d0d3da;
     }
 </style>
