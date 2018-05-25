@@ -1,5 +1,5 @@
-<template functional>
-    <div class="lz-card" v-bind="data.attrs" v-on="listeners">
+<template>
+    <div class="lz-card">
         <slot></slot>
     </div>
 </template>
