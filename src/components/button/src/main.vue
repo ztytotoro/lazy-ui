@@ -43,6 +43,7 @@
         border-radius: 2px;
         border: none;
         box-shadow: 2px 2px 8px #ababab;
+        transition: 0.13s;
     }
 
     .lz-btn:hover {
@@ -58,16 +59,15 @@
     }
 
     .lz-btn-default:hover {
-        color: #0067b8;
+        color: rgb(0, 135, 238);
     }
 
     .lz-btn-default:active {
-        background-color: #1c699f;
-        color: #fff;
+        background-color: rgb(28, 105, 160);
     }
 
     .lz-btn-primary {
-        background-color: #0067b8;
+        background-color: rgb(0, 103, 184);
         color: #fff
     }
 
