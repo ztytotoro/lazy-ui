@@ -46,17 +46,26 @@
 
     .lz-container--vcenter {
         align-content: center;
+        align-items: center;
     }
 
     .lz-container--hcenter {
         justify-content: center;
     }
 
-    .lz-container--left,.lz-container--top {
+    .lz-container--left {
         justify-content: flex-start;
     }
 
-    .lz-container--right,.lz-container--bottom {
+    .lz-container--right {
         justify-content: flex-end;
+    }
+    
+    .lz-container--top {
+        align-items: flex-start;
+    }
+
+    .lz-container--bottom {
+        align-items: flex-end;
     }
 </style>
