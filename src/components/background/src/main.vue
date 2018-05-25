@@ -1,5 +1,5 @@
 <template>
-    <div class="lz-bg" style="style"></div>
+    <div class="lz-bg" :style="style"></div>
 </template>
 
 <script>
@@ -15,8 +15,8 @@
         computed: {
             style: function(){
                 return {
-                    "backgrond-color": this.color,
-                    "background-image": `url(${this.image})`
+                    backgrondColor: this.color,
+                    backgroundImage: `url(${this.image})`
                 }
             }
         }
