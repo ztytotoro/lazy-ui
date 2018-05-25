@@ -14,7 +14,7 @@
                 type: String
             },
             disabled: {
-                type: boolean,
+                type: Boolean,
                 default: false
             }
         },
