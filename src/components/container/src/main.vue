@@ -48,7 +48,6 @@
     }
 
     .lz-container--vcenter {
-        align-content: center;
         align-items: center;
     }
 
