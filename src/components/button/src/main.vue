@@ -93,10 +93,15 @@
         box-shadow: none;
     }
 
+    .lz-btn-text:hover {
+        box-shadow: none;
+    }
+
     .lz-btn-text:focus {
         color: #66b1ff;
         border-color: transparent;
         background-color: transparent;
+        box-shadow: none;
     }
 
     .lz-btn:disabled {
