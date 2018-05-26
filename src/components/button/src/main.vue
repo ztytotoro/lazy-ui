@@ -67,21 +67,21 @@
     }
 
     .lz-btn-default:active {
-        background-color: rgb(0, 103, 184);
+        background-color: rgb(0, 135, 238);
         box-shadow: 1px 1px 4px #ababab;
     }
 
     .lz-btn-primary {
-        background-color: rgb(0, 103, 184);
+        background-color: rgb(0, 135, 238);
         color: #fff
     }
 
     .lz-btn-primary:hover {
-        background-color: rgb(0, 135, 238);
+        background-color: rgb(0, 153, 255);
     }
 
     .lz-btn-primary:active {
-        background-color: rgb(0, 103, 184);
+        background-color: rgb(0, 135, 238);
     }
 
     .lz-btn-text {
@@ -90,6 +90,7 @@
         padding-left: 0;
         padding-right: 0;
         width: unset;
+        box-shadow: none;
     }
 
     .lz-btn-text:focus {
