@@ -36,7 +36,7 @@
 </script>
 
 <style>
-    .hy-row {
+    .lz-row {
         padding: 8px;
         display: flex;
         flex-direction: row;
