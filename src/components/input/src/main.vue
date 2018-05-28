@@ -1,107 +1,43 @@
 <template>
-    <button :class="['lz-btn','lz-btn-' + type]" @click="Click" :disabled="disabled">
-        <slot></slot>
-    </button>
+    <div class="lz-input">
+        <slot name="prefix"></slot>
+        <input class="lz-input-field" :type="type" :placeholder="placeholder">
+        <slot name="suffix"></slot>
+    </div>
 </template>
 
 <script>
-    export default {
-        name: "LzInput",
-
-        props: {
-            type: {
-                default: "default",
-                type: String
-            },
-            disabled: {
-                type: Boolean,
-                default: false
-            }
+export default {
+    props: {
+        type: {
+            type: String,
+            default: "text"
         },
-
-        methods: {
-            Click: function (e) {
-                this.$emit('click', e);
-            }
-        }
-    };
+        placeholder: String
+    }
+}
 </script>
 
 <style>
-    .lz-btn {
-        width: 92px;
-        height: 32px;
-        line-height: 32px;
-        padding: 0;
-        font-weight: normal;
-        outline: none;
-        text-align: center;
-        font-size: 14px;
-        cursor: pointer;
-        touch-action: manipulation;
-        white-space: nowrap;
-        border-radius: 4px;
-    }
+.lz-input {
+    height: 40px;
+    width: 280px;
+    border: 1px solid rgb(184, 182, 182);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 4px 12px;
+}
 
-    .lz-btn+.lz-btn {
-        margin-left: 10px;
-    }
+.lz-input+.lz-input{
+    margin-top: 25px;
+}
 
-    .lz-btn-default {
-        border: 1px solid #bfbfbf;
-        background-color: #fff;
-    }
-
-    .lz-btn-default:hover {
-        border-color: #4d99e0;
-        color: #4d99e0;
-    }
-
-    .lz-btn-default:active {
-        background-color: #1c699f;
-        color: #fff;
-    }
-
-    .lz-btn-primary {
-        background-color: #4d99e0;
-        border: 1px solid #4d99e0;
-        color: #fff
-    }
-
-    .lz-btn-primary:hover {
-        background-color: #217ebd;
-        color: #fff;
-    }
-
-    .lz-btn-primary:active {
-        background-color: #1c699f;
-        color: #fff;
-    }
-
-    .lz-btn-text {
-        border-color: transparent;
-        color: #409eff;
-        background: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        width: unset;
-    }
-
-    .lz-btn-text:focus {
-        color: #66b1ff;
-        border-color: transparent;
-        background-color: transparent;
-    }
-
-    .lz-btn:disabled {
-        color: #737477;
-        border: 1px solid #bfbfbf;
-        background-color: #e6e6e6;
-        cursor: default;
-    }
-
-    .lz-btn-text:disabled {
-        background: transparent;
-        border: none;
-    }
+.lz-input-field {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #666;
+}
 </style>
