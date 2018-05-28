@@ -43,5 +43,6 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
+        width: 100%;
     }
 </style>

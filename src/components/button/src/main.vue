@@ -27,9 +27,41 @@
     };
 </script>
 
-<style>
+<style lang="less">
+    @shadow: #ababab;
+
+    @disabled: #e6e6e6;
+    @disabled-text: #737477;
+
+    @primary: rgb(0, 135, 238);
+    @primary-text: #fff;
+
+    @default: #fff;
+    @default-text: #555;
+
+    .primary() {
+        background-color: @primary;
+        color: @primary-text;
+    }
+
+    .default() {
+        background-color: @default;
+        color: @default-text;
+    }
+
+    .text() {
+        color: #409eff;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .disabled() {
+        background-color: @disabled;
+        color: @disabled-text;
+    }
+
     .lz-btn {
-        width: 92px;
+        min-width: 92px;
         height: 32px;
         line-height: 32px;
         padding: 0;
@@ -42,46 +74,50 @@
         white-space: nowrap;
         border-radius: 2px;
         border: none;
-        box-shadow: 2px 2px 8px #ababab;
+        box-shadow: 2px 2px 8px @shadow;
         transition: 0.167s;
-    }
 
-    .lz-btn:hover {
-        box-shadow: 4px 4px 8px #ababab;
-    }
+        &:hover {
+            box-shadow: 4px 4px 8px @shadow;
+        }
 
-    .lz-btn:active {
-        box-shadow: 1px 1px 4px #ababab;
-    }
+        &:active {
+            box-shadow: 1px 1px 4px @shadow;
+        }
 
-    .lz-btn+.lz-btn {
-        margin-left: 10px;
+        &:disabled {
+            color: #737477;
+            background-color: #e6e6e6;
+            cursor: default;
+        }
+
+        &+& {
+            margin-left: 10px;
+        }
     }
 
     .lz-btn-default {
-        background-color: #fff;
-    }
+        .default;
 
-    .lz-btn-default:hover {
-        color: rgb(0, 135, 238);
-    }
+        &:hover {
+            color: @primary;
+        }
 
-    .lz-btn-default:active {
-        background-color: rgb(0, 135, 238);
-        box-shadow: 1px 1px 4px #ababab;
+        &:active {
+            background-color: rgb(0, 153, 255);
+        }
     }
 
     .lz-btn-primary {
-        background-color: rgb(0, 135, 238);
-        color: #fff
-    }
+        .primary;
 
-    .lz-btn-primary:hover {
-        background-color: rgb(0, 153, 255);
-    }
+        &:hover {
+            background-color: rgb(0, 153, 255);
+        }
 
-    .lz-btn-primary:active {
-        background-color: rgb(0, 135, 238);
+        &:active {
+            background-color: @primary;
+        }
     }
 
     .lz-btn-text {
@@ -91,26 +127,20 @@
         padding-right: 0;
         width: unset;
         box-shadow: none;
-    }
 
-    .lz-btn-text:hover {
-        box-shadow: none;
-    }
+        &:hover {
+            box-shadow: none;
+        }
 
-    .lz-btn-text:focus {
-        color: #66b1ff;
-        border-color: transparent;
-        background-color: transparent;
-        box-shadow: none;
-    }
+        &:focus {
+            color: #66b1ff;
+            border-color: transparent;
+            background-color: transparent;
+            box-shadow: none;
+        }
 
-    .lz-btn:disabled {
-        color: #737477;
-        background-color: #e6e6e6;
-        cursor: default;
-    }
-
-    .lz-btn-text:disabled {
-        background: transparent;
+        &:disabled {
+            background: transparent;
+        }
     }
 </style>
