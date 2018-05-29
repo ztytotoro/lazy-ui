@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 .lz-input {
     height: 40px;
     width: 280px;
@@ -27,17 +27,17 @@ export default {
     display: flex;
     justify-content: center;
     padding: 4px 12px;
-}
 
-.lz-input+.lz-input{
-    margin-top: 25px;
-}
+    &+& {
+        margin-top: 25px;
+    }
 
-.lz-input-field {
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    color: #666;
+    &-field {
+        width: 100%;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        color: #666;
+    }
 }
 </style>

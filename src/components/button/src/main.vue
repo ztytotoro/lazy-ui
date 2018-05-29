@@ -94,53 +94,53 @@
         &+& {
             margin-left: 10px;
         }
-    }
 
-    .lz-btn-default {
-        .default;
+        &-default {
+            .default;
 
-        &:hover {
-            color: @primary;
+            &:hover {
+                color: @primary;
+            }
+
+            &:active {
+                background-color: rgb(0, 153, 255);
+            }
         }
 
-        &:active {
-            background-color: rgb(0, 153, 255);
-        }
-    }
+        &-primary {
+            .primary;
 
-    .lz-btn-primary {
-        .primary;
+            &:hover {
+                background-color: rgb(0, 153, 255);
+            }
 
-        &:hover {
-            background-color: rgb(0, 153, 255);
-        }
-
-        &:active {
-            background-color: @primary;
-        }
-    }
-
-    .lz-btn-text {
-        color: #409eff;
-        background: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        width: unset;
-        box-shadow: none;
-
-        &:hover {
-            box-shadow: none;
+            &:active {
+                background-color: @primary;
+            }
         }
 
-        &:focus {
-            color: #66b1ff;
-            border-color: transparent;
-            background-color: transparent;
-            box-shadow: none;
-        }
-
-        &:disabled {
+        &-text {
+            color: #409eff;
             background: transparent;
+            padding-left: 0;
+            padding-right: 0;
+            width: unset;
+            box-shadow: none;
+
+            &:hover {
+                box-shadow: none;
+            }
+
+            &:focus {
+                color: #66b1ff;
+                border-color: transparent;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+            &:disabled {
+                background: transparent;
+            }
         }
     }
 </style>
