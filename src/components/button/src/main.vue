@@ -1,5 +1,5 @@
 <template>
-    <button :class="['lz-btn','lz-btn-' + type]" @click="Click" :disabled="disabled">
+    <button :class="['lz-btn','lz-btn-' + type, size ? 'lz-btn--' + size : '']" @click="Click" :disabled="disabled">
         <slot></slot>
     </button>
 </template>
@@ -16,7 +16,8 @@
             disabled: {
                 type: Boolean,
                 default: false
-            }
+            },
+            size: String
         },
 
         methods: {
@@ -61,10 +62,9 @@
     }
 
     .lz-btn {
-        min-width: 92px;
         height: 32px;
         line-height: 32px;
-        padding: 0;
+        padding: 0 16px;
         font-weight: normal;
         outline: none;
         text-align: center;
@@ -141,6 +141,12 @@
             &:disabled {
                 background: transparent;
             }
+        }
+
+        &--large {
+            height: 40px;
+            width: 280px;
+            font-size: 18px;
         }
     }
 </style>
