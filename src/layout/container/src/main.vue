@@ -16,16 +16,11 @@
         computed: {
             tClass: function(){
                 let t = ["lz-container"];
-                switch(this.sleep){
-                    case "center": t.push("lz-container--hcenter");break;
-                    case "left": t.push("lz-container--left");break;
-                    case "right": t.push("lz-container--right");break;
-                    default:  break;
-                }
-                switch(this.stand){
-                    case "center": t.push("lz-container--vcenter");break;
-                    case "top": t.push("lz-container--top");break;
-                    case "bottom": t.push("lz-container--bottom");break;
+                switch(this.align){
+                    case "center":
+                        t.push("lz-container--hcenter");
+                        t.push("lz-container--vcenter");
+                        break;
                     default: break;
                 }
                 return t;
