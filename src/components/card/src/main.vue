@@ -1,16 +1,22 @@
 <template>
-    <div class="lz-card">
+    <div :class="['lz-card', animate ? 'lz-card-animate' : '']">
         <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-        name: "LzCard"
+        name: "LzCard",
+        props: {
+            animate: {
+                type: Boolean,
+                default: false
+            }
+        }
     };
 </script>
 
-<style>
+<style lang="less">
     .lz-card {
         background: #fff;
         border-radius: 1px;
@@ -20,5 +26,12 @@
         box-shadow: 0px 0px 8px 2px #d0d3da;
         display: flex;
         flex-direction: column;
+        cursor: default;
+        &-animate {
+            transition: 0.167s;
+            &:hover {
+                box-shadow: 0px 0px 20px 8px #dadadad5;
+            }
+        }
     }
 </style>
