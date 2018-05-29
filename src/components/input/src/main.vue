@@ -1,7 +1,7 @@
 <template>
     <div class="lz-input">
         <slot name="prefix"></slot>
-        <input class="lz-input-field" :type="type" :placeholder="placeholder">
+        <input class="lz-input-field" :type="type" :value="value" :placeholder="placeholder" @input="$emit('input', $event.target.value)">
         <slot name="suffix"></slot>
     </div>
 </template>
@@ -13,7 +13,8 @@ export default {
             type: String,
             default: "text"
         },
-        placeholder: String
+        placeholder: String,
+        value: [String, Number]
     }
 }
 </script>
