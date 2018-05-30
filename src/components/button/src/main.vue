@@ -91,6 +91,12 @@
             cursor: default;
         }
 
+        &:disabled:hover {
+            color: #737477;
+            background-color: #e6e6e6;
+            cursor: default;
+        }
+
         &+& {
             margin-left: 10px;
         }
