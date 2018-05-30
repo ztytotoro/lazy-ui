@@ -89,12 +89,14 @@
             color: #737477;
             background-color: #e6e6e6;
             cursor: default;
+            box-shadow: 1px 1px 2px #ababab;
         }
 
         &:disabled:hover {
             color: #737477;
             background-color: #e6e6e6;
             cursor: default;
+            box-shadow: 1px 1px 2px #ababab;
         }
 
         &+& {
