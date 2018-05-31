@@ -17,7 +17,7 @@ export default {
         min-height: 80px;
         min-width: 200px;
         padding: 12px;
-        box-shadow: 0px 0px 8px 2px #d0d3da;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
         display: flex;
         flex-direction: column;
         cursor: default;
