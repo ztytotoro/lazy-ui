@@ -5,6 +5,10 @@ import Input from "./components/input/index.js";
 import Pannel from "./components/pannel/index.js";
 import Container from "./layout/container/index.js";
 import Row from "./layout/row/index.js";
+import {
+	default as Split,
+	Item as SplitItem
+} from "./layout/split/index.js";
 
 
 const components = [
@@ -14,16 +18,28 @@ const components = [
 	Input,
 	Card,
 	Background,
-	Pannel
+	Pannel,
+	Split
 ];
 
-const install = function(Vue) {
+const install = function (Vue) {
 	components.map(component => {
 		component.install(Vue);
 	});
 };
 
-export { install, Row, Container, Button, Input, Card, Background, Pannel };
+export {
+	install,
+	Row,
+	Container,
+	Button,
+	Input,
+	Card,
+	Background,
+	Pannel,
+	Split,
+	SplitItem
+};
 
 export default {
 	install
