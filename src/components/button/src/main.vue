@@ -111,7 +111,7 @@
             }
 
             &:active {
-                background-color: rgb(0, 153, 255);
+                color: @default;
             }
         }
 
