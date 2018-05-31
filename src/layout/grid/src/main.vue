@@ -15,8 +15,14 @@ export default {
             type: String,
             default: "1fr"
         },
-        alignItems: String,
-        justifyItems: String
+        alignItems: {
+            type: String,
+            default: "center"
+        },
+        justifyItems: {
+            type: String,
+            default: "start"
+        }
     },
     data() {
         return {
