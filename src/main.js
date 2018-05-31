@@ -3,7 +3,7 @@ import Input from "./components/input/index.js";
 import Container from "./layout/container/index.js";
 import Card from "./components/card/index.js";
 import Background from "./components/background/index.js";
-import Row from "./layout/background/index.js";
+import Row from "./layout/row/index.js";
 
 const components = [
 	Button,
