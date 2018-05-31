@@ -48,6 +48,7 @@
     .default() {
         background-color: @default;
         color: @default-text;
+        border: 1px solid #e4e7ed;
     }
 
     .text() {
@@ -111,7 +112,7 @@
             }
 
             &:active {
-                color: @default;
+                color: @default-text;
             }
         }
 
