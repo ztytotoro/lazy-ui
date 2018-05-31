@@ -14,7 +14,9 @@ export default {
         columnWidth: {
             type: String,
             default: "1fr"
-        }
+        },
+        alignItems: String,
+        justifyItems: String
     },
     data() {
         return {
@@ -25,7 +27,9 @@ export default {
         style(){
             return {
                 gridTemplateColumns: `repeat(${this.columns}, ${this.columnWidth})`,
-                gridTemplateRows: `repeat(${this.rows || Math.ceil(this.children.length / this.columns)}, ${this.rowHeight})`
+                gridTemplateRows: `repeat(${this.rows || Math.ceil(this.children.length / this.columns)}, ${this.rowHeight})`,
+                justifyItems: this.justifyItems,
+                alignItems: this.alignItems
             }
         }
     }
