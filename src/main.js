@@ -9,6 +9,10 @@ import {
 	default as Split,
 	Item as SplitItem
 } from "./layout/split/index.js";
+import {
+	default as Grid,
+	Item as GridItem
+} from "./layout/grid/index.js";
 
 
 const components = [
@@ -19,7 +23,8 @@ const components = [
 	Card,
 	Background,
 	Pannel,
-	Split
+	Split,
+	Grid
 ];
 
 const install = function (Vue) {
@@ -38,7 +43,9 @@ export {
 	Background,
 	Pannel,
 	Split,
-	SplitItem
+	SplitItem,
+	Grid,
+	GridItem
 };
 
 export default {
