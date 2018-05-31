@@ -1,6 +1,6 @@
 <template>
     <div class="lz-label">
-        <span class="lz-label-title">{{title}}</span>
+        <span class="lz-label-title" :style="{'text-align': textAlign}">{{title}}</span>
         <div class="lz-label-item">
             <slot></slot>
         </div>
@@ -11,7 +11,11 @@
 export default {
     name: "LzLabel",
     props: {
-        title: String
+        title: String,
+        textAlign: {
+            type: String,
+            default: "right"
+        }
     }
 }
 </script>
@@ -27,6 +31,8 @@ export default {
             font-size: 17px;
             color: #555;
             width: 100px;
+            height: 40px;
+            line-height: 40px;
         }
 
         &-item {
@@ -34,6 +40,7 @@ export default {
             height: 100%;
             justify-content: flex-start;
             align-items: center;
+            margin-left: 10px;
         }
     }
 </style>
