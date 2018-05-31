@@ -29,3 +29,5 @@ module.exports = {
 	Background,
 	Row
 };
+
+module.exports.default = module.exports;
