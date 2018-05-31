@@ -11,7 +11,10 @@ export default {
         rows: String,
         columns: String,
         rowHeight: String,
-        columnWidth: String
+        columnWidth: {
+            type: String,
+            default: "1fr"
+        }
     },
     data() {
         return {
