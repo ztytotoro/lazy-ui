@@ -1,11 +1,21 @@
 <template>
     <div class="lz-label">
-        <span class="lz-label-title"></span>
+        <span class="lz-label-title">{{title}}</span>
         <div class="lz-label-item">
             <slot></slot>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: "LzLabel",
+    props: {
+        title: String
+    }
+}
+</script>
+
 
 <style lang="less">
     .lz-label {
