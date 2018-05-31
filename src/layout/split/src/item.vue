@@ -20,17 +20,10 @@ export default {
 
   computed: {
     style: function() {
-      if (this.$parent.type === "-") {
-        return {
-          height: "100%",
-          width: parseInt(this.span) / this.$parent.length * 100 + "%"
-        };
-      } else {
-        return {
-          width: "100%",
-          height: parseInt(this.span) / this.$parent.length * 100 + "%"
-        };
-      }
+      return {
+        height: "100%",
+        width: parseInt(this.span) / this.$parent.length * 100 + "%"
+      };
     }
   }
 };
