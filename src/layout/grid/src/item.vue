@@ -11,6 +11,9 @@ export default {
         rowSpan: String,
         colSpan: String
     },
+    created() {
+        this.$parent.children.push(this);
+    },
     computed: {
         style() {
             return {
