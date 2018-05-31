@@ -1,17 +1,18 @@
+import Row from "./layout/row/index.js";
+import Container from "./layout/container/index.js";
+
 import Button from "./components/button/index.js";
 import Input from "./components/input/index.js";
-import Container from "./layout/container/index.js";
 import Card from "./components/card/index.js";
 import Background from "./components/background/index.js";
-import Row from "./layout/row/index.js";
 
 const components = [
+	Row,
+	Container,
 	Button,
 	Input,
-	Container,
 	Card,
-	Background,
-	Row
+	Background
 ];
 
 const install = function(Vue) {
@@ -20,14 +21,16 @@ const install = function(Vue) {
 	});
 };
 
-module.exports = {
+export {
 	install,
+	Row,
+	Container,
 	Button,
 	Input,
-	Container,
 	Card,
-	Background,
-	Row
+	Background
 };
 
-module.exports.default = module.exports;
+export default {
+	install
+};
