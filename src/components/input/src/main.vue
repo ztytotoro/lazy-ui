@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: "LzInput",
     props: {
         type: {
             type: String,

@@ -4,6 +4,13 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: "LzGrid"
+}
+</script>
+
+
 <style lang="less" scoped>
     .lz-grid {
         display: grid;
