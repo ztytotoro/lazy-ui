@@ -2,6 +2,7 @@ import Background from "./components/background/index.js";
 import Button from "./components/button/index.js";
 import Card from "./components/card/index.js";
 import Input from "./components/input/index.js";
+import Label from "./components/label/index.js";
 import Pannel from "./components/pannel/index.js";
 import Container from "./layout/container/index.js";
 import Row from "./layout/row/index.js";
@@ -24,7 +25,8 @@ const components = [
 	Background,
 	Pannel,
 	Split,
-	Grid
+	Grid,
+	Label
 ];
 
 const install = function (Vue) {
@@ -45,7 +47,8 @@ export {
 	Split,
 	SplitItem,
 	Grid,
-	GridItem
+	GridItem,
+	Label
 };
 
 export default {
