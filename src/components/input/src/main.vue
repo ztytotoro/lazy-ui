@@ -1,5 +1,5 @@
 <template>
-    <div :class="['lz-input', size ? 'lz-input' + size : '']">
+    <div :class="['lz-input', size ? 'lz-input-' + size : '']">
         <slot name="prefix"></slot>
         <input class="lz-input-field" :type="type" :value="value" :placeholder="placeholder" @input="$emit('input', $event.target.value)">
         <slot name="suffix"></slot>
