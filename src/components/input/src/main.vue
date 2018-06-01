@@ -1,5 +1,5 @@
 <template>
-    <div class="lz-input">
+    <div :class="['lz-input', size ? 'lz-input' + size : '']">
         <slot name="prefix"></slot>
         <input class="lz-input-field" :type="type" :value="value" :placeholder="placeholder" @input="$emit('input', $event.target.value)">
         <slot name="suffix"></slot>
@@ -15,15 +15,16 @@ export default {
             default: "text"
         },
         placeholder: String,
-        value: [String, Number]
+        value: [String, Number],
+        size: String
     }
 }
 </script>
 
 <style lang="less">
 .lz-input {
-    height: 40px;
-    width: 280px;
+    height: 32px;
+    width: 200px;
     border: 1px solid rgb(184, 182, 182);
     border-radius: 2px;
     display: flex;
@@ -38,8 +39,17 @@ export default {
         width: 100%;
         outline: none;
         border: none;
-        font-size: 15px;
+        font-size: 14px;
         color: #666;
+    }
+
+    &-large {
+        height: 40px;
+        width: 280px;
+
+        & > input {
+            font-size: 15px;
+        }
     }
 }
 </style>
