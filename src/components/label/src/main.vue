@@ -28,7 +28,7 @@ export default {
         align-items: center;
 
         &-title {
-            font-size: 18px;
+            font-size: 16px;
             color: #555;
             width: 100px;
             height: 40px;
