@@ -22,6 +22,10 @@ export default {
         justifyItems: {
             type: String,
             default: "start"
+        },
+        gridGap: {
+            type: String,
+            default: "0"
         }
     },
     data() {
@@ -35,7 +39,8 @@ export default {
                 gridTemplateColumns: `repeat(${this.columns}, ${this.columnWidth})`,
                 gridTemplateRows: `repeat(${this.rows || Math.ceil(this.children.length / this.columns)}, ${this.rowHeight})`,
                 justifyItems: this.justifyItems,
-                alignItems: this.alignItems
+                alignItems: this.alignItems,
+                gridGap: this.gridGap
             }
         }
     }
