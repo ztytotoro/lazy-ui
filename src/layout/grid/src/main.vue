@@ -15,6 +15,7 @@ export default {
             type: String,
             default: "1fr"
         },
+        columnWidths: String,
         alignItems: {
             type: String,
             default: "center"
@@ -36,7 +37,7 @@ export default {
     computed: {
         style(){
             return {
-                gridTemplateColumns: `repeat(${this.columns}, ${this.columnWidth})`,
+                gridTemplateColumns: this.columnWidths ? this.columnWidths : `repeat(${this.columns}, ${this.columnWidth})`,
                 gridAutoRows: this.rowHeight,
                 //gridTemplateRows: `repeat(${this.rows || Math.ceil(this.children.length / this.columns)}, ${this.rowHeight})`,
                 justifyItems: this.justifyItems,
