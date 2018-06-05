@@ -1,7 +1,16 @@
 <template>
-    <div :class="['lz-card', animate ? 'lz-card-animate' : '']">
-        <slot></slot>
+    <div class="lz-card">
+        <div class="lz-card-title">
+            <slot name="title"></slot>
+        </div>
+        <div :class="['lz-card-main', animate ? 'lz-card-animate' : '']">
+            <div class="lz-card-title">
+                <slot name="op"></slot>
+            </div>
+            <slot></slot>
+        </div>
     </div>
+    
 </template>
 
 <script>
@@ -17,7 +26,7 @@
 </script>
 
 <style lang="less">
-    .lz-card {
+    .lz-card-main {
         background: #fff;
         border-radius: 1px;
         min-height: 80px;
@@ -32,6 +41,17 @@
             &:hover {
                 box-shadow: 0px 0px 20px 8px #dadadad5;
             }
+        }
+    }
+
+    .lz-card {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 </style>
