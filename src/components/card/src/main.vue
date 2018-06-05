@@ -1,10 +1,10 @@
 <template>
     <div class="lz-card">
-        <div class="lz-card-title">
+        <div class="lz-card-title" v-if="$slots.title">
             <slot name="title"></slot>
         </div>
         <div :class="['lz-card-main', animate ? 'lz-card-animate' : '']">
-            <div class="lz-card-title">
+            <div class="lz-card-title" v-if="$slots.op">
                 <slot name="op"></slot>
             </div>
             <slot></slot>
