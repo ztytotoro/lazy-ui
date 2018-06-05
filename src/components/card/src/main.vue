@@ -35,13 +35,8 @@
         box-shadow: 0px 0px 8px 2px #d0d3da;
         display: flex;
         flex-direction: column;
+        flex: 1;
         cursor: default;
-        &-animate {
-            transition: 0.167s;
-            &:hover {
-                box-shadow: 0px 0px 20px 8px #dadadad5;
-            }
-        }
     }
 
     .lz-card {
@@ -52,6 +47,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 10px 0;
+        }
+        &-animate {
+            transition: 0.167s;
+            &:hover {
+                box-shadow: 0px 0px 20px 8px #dadadad5;
+            }
         }
     }
 </style>
