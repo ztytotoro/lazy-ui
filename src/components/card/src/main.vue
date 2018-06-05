@@ -21,13 +21,22 @@
                 default: false
             },
             background: String,
-            shadowColor: String
+            shadowColor: String,
+            justifyContent: {
+                type: String,
+                default: "flex-start"
+            },
+            alignItems: {
+                type: String,
+                default: "center"
+            }
         },
         computed: {
             style() {
                 return {
                     background: this.background,
-
+                    justifyContent: this.justifyContent,
+                    alignItems: this.alignItems
                 }
             }
         }
