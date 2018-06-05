@@ -20,8 +20,8 @@ export default {
     computed: {
         style() {
             return {
-                gridColumn: `span ${this.colSpan}`,
-                gridRow: `span ${this.rowSpan}`,
+                gridColumn: this.colSpan ? `span ${this.colSpan}` : "",
+                gridRow: this.rowSpan ? `span ${this.rowSpan}` : "",
                 alignItems: this.alignItems ? this.alignItems : this.$parent.alignItems,
                 justifyContent: this.justifyContent ? this.justifyContent : this.$parent.justifyItems,
                 padding: this.padding ? this.padding : this.$parent.padding
