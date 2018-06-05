@@ -9,7 +9,10 @@ export default {
     name: "LzGridItem",
     props: {
         rowSpan: String,
-        colSpan: String
+        colSpan: String,
+        alignItems: String,
+        justifyContent: String,
+        padding: String
     },
     created() {
         this.$parent.children.push(this);
@@ -17,8 +20,11 @@ export default {
     computed: {
         style() {
             return {
-                gridColumn: this.colSpan,
-                gridRow: this.rowSpan
+                gridColumn: `span ${this.colSpan}`,
+                gridRow: `span ${this.rowSpan}`,
+                alignItems: this.alignItems ? this.alignItems : this.$parent.alignItems,
+                justifyContent: this.justifyContent ? this.justifyContent : this.$parent.justifyItems,
+                padding: this.padding ? this.padding : this.$parent.padding
             }
         }
     }
@@ -30,9 +36,6 @@ export default {
         width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
     }
 </style>
 
