@@ -51,5 +51,6 @@ export default {
 <style lang="less">
     .lz-grid {
         display: grid;
+        width: 100%;
     }
 </style>
