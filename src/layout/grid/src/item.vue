@@ -24,7 +24,7 @@ export default {
                 gridRow: this.rowSpan ? `span ${this.rowSpan}` : "",
                 alignItems: this.alignItems ? this.alignItems : this.$parent.alignItems,
                 justifyContent: this.justifyContent ? this.justifyContent : this.$parent.justifyItems,
-                padding: this.padding ? this.padding : this.$parent.padding
+                padding: this.padding ? this.padding : this.$parent.paddingItems
             }
         }
     }

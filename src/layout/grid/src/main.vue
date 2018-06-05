@@ -27,6 +27,14 @@ export default {
         gridGap: {
             type: String,
             default: "0"
+        },
+        padding: {
+            type: String,
+            default: "0"
+        },
+        paddingItems: {
+            type: String,
+            default: "0"
         }
     },
     data() {
@@ -42,7 +50,8 @@ export default {
                 //gridTemplateRows: `repeat(${this.rows || Math.ceil(this.children.length / this.columns)}, ${this.rowHeight})`,
                 justifyItems: this.justifyItems,
                 alignItems: this.alignItems,
-                gridGap: this.gridGap
+                gridGap: this.gridGap,
+                padding: this.padding
             }
         }
     }
