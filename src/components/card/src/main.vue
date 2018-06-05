@@ -10,7 +10,6 @@
             <slot></slot>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -20,6 +19,16 @@
             animate: {
                 type: Boolean,
                 default: false
+            },
+            background: String,
+            shadowColor: String
+        },
+        computed: {
+            style() {
+                return {
+                    background: this.background,
+                    
+                }
             }
         }
     };
