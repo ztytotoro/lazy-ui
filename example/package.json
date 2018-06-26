@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "My glorious Nuxt.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}
